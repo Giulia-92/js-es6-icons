@@ -112,3 +112,11 @@
 		color: 'blue'
 	}
 ];
+
+
+
+const selectElement = document.querySelector('.filterlist');
+selectElement.addEventListener('change', (event) => {
+  const result = document.querySelector('.risultato');
+  result.textContent = `Hai scelto ${event.target.value}`;
+});
