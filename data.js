@@ -125,10 +125,10 @@ selectElement.addEventListener('change', (event) => {
   
 });
 
-const teamContainer = document.querySelector('.container');
+const teamContainer = document.querySelector('.row');
 
 function stampaElementi(){
-	const row = teamContainer.getElementsByClassName('.row mt-3');
+	//const row = teamContainer.getElementsByClassName('.row mt-3');
     let item = '';
 	
     for(let i = 0; i < elementi.length; i++ ){
