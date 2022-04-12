@@ -114,12 +114,12 @@
 ];
 
 
-let coso = ''; //Variabile usata per salvare il valore del menu a tendina
+let scelta = ''; //Variabile usata per salvare il valore del menu a tendina
 const selectElement = document.querySelector('.filterlist');
 selectElement.addEventListener('change', (event) => {
   const result = document.querySelector('.risultato');
-  coso = document.querySelector(".filterlist").value;
-  console.log(coso);
+  scelta = document.querySelector(".filterlist").value;
+  console.log(scelta);
   result.textContent = `Hai scelto : ${event.target.value}`;
   stampaElementi();
   
@@ -132,7 +132,7 @@ function stampaElementi(){
     let item = '';
 	
     for(let i = 0; i < elementi.length; i++ ){
-		if (coso == elementi[i].type){
+		if (scelta == elementi[i].type){
         item +=  ` 
         
               <div class="col-1">
@@ -142,7 +142,7 @@ function stampaElementi(){
         
 			  `} 
 
-		if (coso == 'All'){
+		if (scelta == 'All'){
         item +=  ` 
         
               <div class="col-1">
